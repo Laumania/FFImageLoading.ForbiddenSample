@@ -76,4 +76,4 @@ The funny thing is, as you can see in the sample, that the same image loads fine
 
 I googled it and could find anything, so I created a this repo, which is a totally new Xamarin.Forms Solution that illustrates the issue.
 
-
+[Created issue over at FFImageLoading here](https://github.com/luberda-molinet/FFImageLoading/issues/1306)
