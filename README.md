@@ -1,3 +1,5 @@
+UPDATE: Solution found [see the issue comment](https://github.com/luberda-molinet/FFImageLoading/issues/1306)
+
 # FFImageLoading.ForbiddenSample
 Recently I ran into an this issue, were images from sum sources resulted in the below error message, when showin in an Xamarin.Forms app using FFImageLoading CachedImage control.
 
