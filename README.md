@@ -52,6 +52,26 @@ error was encountered while trying to use an ErrorDocument to handle the request
 This is the result I get when running this solution on my machine.
 ![alt text](Assets/Screenshot.png "You don't have permission to access [IMAGE_PATH] on this server.")
 
+See the [ItemsPage.xaml](https://github.com/Laumania/FFImageLoading.ForbiddenSample/blob/76468e2477d3ef5b303ffbb0ebcd79b0af20efa7/ForbiddenImageSample/Views/ItemsPage.xaml#L21) where both an <Image> and a CachedImage is used.
+
+```
+<StackLayout>
+        <Label Text="Normal Image" />
+        <Image Source="https://politirapporten.nu/wp-content/uploads/2019/04/AKA05311-e1555667573457.jpg" />
+
+        <Label Text="FFImageLoading Image" />
+        <ffimageloading:CachedImage 
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"                                
+                                Margin="-20,10"
+								FadeAnimationEnabled="true"
+                                Aspect="AspectFill"
+	            				Source="https://politirapporten.nu/wp-content/uploads/2019/04/AKA05311-e1555667573457.jpg">
+        </ffimageloading:CachedImage>
+    </StackLayout>
+```
+
 The funny thing is, as you can see in the sample, that the same image loads fine using the normal <Image> control.
 
 I googled it and could find anything, so I created a this repo, which is a totally new Xamarin.Forms Solution that illustrates the issue.
